@@ -34,6 +34,7 @@
     <!-- Template Stylesheet -->
     <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ URL::asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ URL::asset('css/blog.css') }}">
     
 </head>
 
