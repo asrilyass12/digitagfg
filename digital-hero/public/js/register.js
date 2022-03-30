@@ -16,15 +16,15 @@ var confirm_passeye=document.querySelector(".con_eye");
 var confirm_pass_type=document.querySelector(".confirm_pass_type");
 var confirm_set_pass=document.querySelector(".con_eye");
 
-var tick=document.querySelector(".agree span");
-tick.addEventListener('click',function(){
-tick.classList.toggle('agree_green');
-});
+// var tick=document.querySelector(".agree span");
+// tick.addEventListener('click',function(){
+// tick.classList.toggle('agree_green');
+// });
 
-var tick_green=document.querySelector(".agree_submit span");
-tick_green.addEventListener('click',function(){
-tick_green.classList.toggle('agree_submit_green');
-});
+// var tick_green=document.querySelector(".agree_submit span");
+// tick_green.addEventListener('click',function(){
+// tick_green.classList.toggle('agree_submit_green');
+// });
 
 
 passeye.addEventListener('click',function(){

@@ -86,7 +86,7 @@
             >دخول</a
           >
           <a
-            href="register.html"
+            href="register2.html"
             class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block"
             style="background-color: #fba504"
             >التسجيل</a

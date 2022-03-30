@@ -9,7 +9,7 @@
     <meta content="" name="description">
 
     <!-- Favicon -->
-    <link href="{{ URL::asset('img/favicon.ico')}}" rel="icon">
+    <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,16 +21,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{ URL::asset('lib/animate/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
-
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body dir="rtl">
@@ -48,7 +47,7 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <img src="{{ URL::asset('img/أبطال الديجيتال.png') }}" alt="Logo">
+                    <img src="img/أبطال الديجيتال.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -61,7 +60,7 @@
                         <a href="#contact" class="nav-item nav-link">تواصل معنا</a>
                     </div>
                     <a href="login.html" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
-                    <a href="register.html" class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block" style="background-color: #FBA504;">التسجيل</a>
+                    <a href="register2.html" class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block" style="background-color: #FBA504;">التسجيل</a>
                 </div>
             </nav>
  <!-- End Hero -->
@@ -227,20 +226,19 @@
         <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
-   <!-- JavaScript Libraries -->
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-   <script src="{{ URL::asset('lib/wow/wow.min.js') }}"></script>
-   <script src="{{ URL::asset('lib/easing/easing.min.js') }}"></script>
-   <script src="{{ URL::asset('lib/waypoints/waypoints.min.js') }}"></script>
-   <script src="{{ URL::asset('lib/counterup/counterup.min.js') }}"></script>
-   <script src="{{ URL::asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
-   <script src="{{ URL::asset('lib/isotope/isotope.pkgd.min.js') }}"></script>
-   <script src="{{ URL::asset('lib/lightbox/js/lightbox.min.js') }}"></script>
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-   <!-- Template Javascript -->
-   <script src="{{ URL::asset('js/main.js') }}"></script>
-   <script src="{{ URL::asset('js/script.js') }}"></script>
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

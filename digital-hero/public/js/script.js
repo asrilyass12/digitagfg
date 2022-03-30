@@ -1,7 +1,5 @@
 function content(i){
     let table = new Array("كيفاش","علاش","شنو الهدف");
-    let tablee = new Array("1","2","3");
-    let tableee = new Array("11","22","33");
 
     let z = 1;
     let q;
@@ -16,9 +14,7 @@ function content(i){
     }
     document.getElementById(q).style.color ="#fba504";
     document.getElementById(q).style.backgroundColor ="#fff";
-    document.getElementById("heade").innerHTML = table[q - 1];
-    document.getElementById("titlee").innerHTML = tablee[q - 1];
-    document.getElementById("bodye").innerHTML = tableee[q - 1];
+    document.getElementById("head").innerHTML = table[q - 1];
     
     
     

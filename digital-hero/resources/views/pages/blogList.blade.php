@@ -1,4 +1,4 @@
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,21 +20,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Favicons -->
-    <link href="{{ URL::asset('img/أبطال الديجيتال.png')}}" rel="icon">
-    <link href="{{ URL::asset('img/أبطال الديجيتال.png')}}" rel="apple-touch-icon">
+    <link href="img/أبطال الديجيتال.png" rel="icon">
+    <link href="img/أبطال الديجيتال.png" rel="apple-touch-icon">
 
     <!-- Libraries Stylesheet -->
-    <link href="{{ URL::asset('lib/animate/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-    <link href="{{ URL::asset('lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{ URL::asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="{{ URL::asset('css/style.css') }}" rel="stylesheet">
-    <link rel="stylesheet" href="{{ URL::asset('css/styles.css') }}">
-    <link rel="stylesheet" href="{{ URL::asset('css/blog.css') }}">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/blog.css">
     
 </head>
 
@@ -53,7 +53,7 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="#" class="navbar-brand p-0">
-                    <img src="{{ URL::asset('img/أبطال الديجيتال.png')}}" alt="Logo">
+                    <img src="img/أبطال الديجيتال.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -66,67 +66,47 @@
                         <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
                     </div>
                     <a href="login.html" class="btn rounded-3 py-1 px-3 ms-2 d-none d-lg-block">دخول</a>
-                    <a href="register.html" class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block" style="background-color: #FBA504;">التسجيل</a>
+                    <a href="register2.html" class="btn rounded-3 py-1 px-3 ms-3 d-none d-lg-block" style="background-color: #FBA504;">التسجيل</a>
                 </div>
-            </nav> --}}
-
-@extends('layouts.master')
-@section('content')
-    <!-- End Hero -->
-    <section id="hero">
-                <div class="container px-lg-5">
-                    <div class="row align-items-end">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="text-white text-center mb-4 animated slideInDown">نادي أبطال الديجيتال <br><p class="text-secondary" style="font-size: 30px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> علال الفاسي</p></h1>
-                            <p class="text-white pb-3 animated slideInDown">Tempor rebum no at dolore lorem clita rebum rebum ipsum rebum stet dolor sed justo kasd. Ut dolor sed magna dolor sea diam. Sit diam sit justo amet ipsum vero ipsum clita lorem</p>
-                            <div class="d-grid gap-2 col-4 mx-auto">
-                            <a href="register2.html" class="btn btn-secondary py-sm-1 px-sm-5 rounded-3 animated slideInLeft">نخارط معانا</a>
-                        </div>
-                        </div>
-                        <div class="col-lg-6 my-4 text-center text-lg-start">
-                            <img class="img-fluid animated zoomIn" src="img/أبطال الديجيتال.png" alt="">
-                        </div>
-                    </div>
-                </div>
-        <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-        <defs>
-            <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-        </defs>
-        <g class="wave1">
-            <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-        </g>
-        <g class="wave2">
-            <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-        </g>
-        <g class="wave3">
-            <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-        </g>
-        </svg>
-    </div>
-        </section>
+            </nav>
+  <!-- End Hero -->
+  <section id="hero" style="padding: 65px 0 0 0;"></section>
     <!-- Navbar & Hero End -->
-
     <!-- ////////////////////////////////////////////////// -->
 
-<div class="d-flex  flex-wrap justify-content-center">
-    @foreach ($posts as $post)
-    <div class="card mx-3" style="width: 18rem;">
-        <img src="{{asset('storage/'.$post->image)}}" class="card-img-top" alt="...">
-        
-        <div class="card-body">
-            <h5 class="card-title">{{$post->title}}</h5>
-            <p class="card-text">{{$post->excerpt}}</p>
-            <a href="{{route('blogs.show', $post->id)}}" class="btn btn-primary">اضهار المزيد</a>
+    <div class="row m-5">
+      <div class="leftcolumn">
+        <div class="card">
+          <img src="img/hero.png" style="height:200px;">Image</img>
+          <h2>التعرف على مجالات الانترنت</h2>
+          <h5>بطال الديجتال موقع إلكتروني لواحد الكلوب بثانوية علال الفاسي كيفاش نشأ أبطال الديجتال أستاذ
+             المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو . علاش أبطال الديجتال أبطال الديجتال سمية تاع واحد الكرتون كيهدر علا شي أشخاص كاينين فالعالم تاع الديجتال  و
+              كانوا هما الأبطال تماك و لهذا داكشي سمينا الكلوب هاد سمية  شنو الهدف من الكلوب الهدف هو اننا نحاولو نكتشفو 
+             المواهب المعلوماتية و نطوروها بشكل أفضل كما اننا غادي نحرصو على اندماجكم باش ينجح هاد الكلوب</h5>
+          <a href="" dir="ltr"><strong>...المزيد</strong></a>
         </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card">
+          <img width="40%" class="d-block m-auto" src="img/أبطال الديجيتال.png" alt="Logo">
+          <strong class="text-muted text-center my-4">أبطال الديجيتال  هو نادي لاكتشاف المواهب المعلوماتية و تطويرها وكيحرص على ادماج الشباب في عالم الديجيتال </strong>
+        </div>
+        <div class="card">
+          <h3>Popular Post</h3>
+          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="#">hhhhhhhhh</a></div><br>
+          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="">hhhhhhhh</a></div><br>
+          <div class="text-dark"><img style="width: 20%;" src="img/hero-bg.jpg" alt=""> <a href="">hhhhhhhhhh</a></div>
+        </div>
+      </div>
     </div>
-    @endforeach
-</div>
+  
     <!-- ////////////////////////////////////////////////// -->
-@endsection
 
-    <!-- Footer Start -->
+
+
+  <!-- Footer Start -->
         
-    {{-- <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" dir="rtl">
+  <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s" dir="rtl">
     <div class="container py-5 px-lg-5">
         <div class="row g-5">
             <div class="col-md-4 col-lg-3">
@@ -155,7 +135,7 @@
             </div>
             <div class="col-md-6 col-lg-3">
                 <div class="row g-3 my-5">
-                        <img class="img-fluid" src="{{ URL::asset('img/أبطال الديجيتال.png')}}" alt="Image">
+                        <img class="img-fluid" src="img/أبطال الديجيتال.png" alt="Image">
                 </div>
             </div>
         </div>
@@ -164,7 +144,7 @@
         <div class="copyright">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
+                  &copy; <a class="border-bottom" href="index.html">Degital</a>, جميع الحقوق محفوظة. 
                     
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                     <!-- Designed By <a class="border-bottom" href="">OUALI Rida</a><br><br> -->
@@ -183,6 +163,7 @@
 </div>
 <!-- Footer End -->
 
+
 <!-- Back to Top -->
 <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 </div>
@@ -190,17 +171,17 @@
 <!-- JavaScript Libraries -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="{{ URL::asset('lib/wow/wow.min.js') }}"></script>
-<script src="{{ URL::asset('lib/easing/easing.min.js') }}"></script>
-<script src="{{ URL::asset('lib/waypoints/waypoints.min.js') }}"></script>
-<script src="{{ URL::asset('lib/counterup/counterup.min.js') }}"></script>
-<script src="{{ URL::asset('lib/owlcarousel/owl.carousel.min.js') }}"></script>
-<script src="{{ URL::asset('lib/isotope/isotope.pkgd.min.js') }}"></script>
-<script src="{{ URL::asset('lib/lightbox/js/lightbox.min.js') }}"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
 
 <!-- Template Javascript -->
-<script src="{{ URL::asset('js/main.js') }}"></script>
-<script src="{{ URL::asset('js/script.js') }}"></script>
+<script src="js/main.js"></script>
+<script src="js/script.js"></script>
 </body>
 
-</html> --}}
+</html>
