@@ -35,4 +35,4 @@ Route::get('/index/contact', function () {
 })->name('contact');
 
 
-Route::get('blog/{id}', [PostController::class, 'show'])->name('blogs.show');
+Route::get('posts/{id}', [PostController::class, 'show'])->name('posts.show');

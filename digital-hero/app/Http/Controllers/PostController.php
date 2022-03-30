@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use TCG\Voyager\Models\Category;
 
 class PostController extends Controller
 {
@@ -46,11 +47,18 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(Post $id)
+    public function show($id)
     {
-        $posts = Post::find($id);
+        $post = Post::find($id);
+        $category = Category::where('id', $post->category_id)->pluck('name');
 
-        return view('pages.blogView', compact('posts'));
+        if (session()->get('viewed') != $post->id) {
+            session()->put('viewed', $post->id);
+            $post->nb_visit++;
+            $post->save();
+        }
+
+        return view('pages.blogView', compact('post', 'category'));
     }
 
     /**
