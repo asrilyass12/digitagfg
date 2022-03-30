@@ -36,6 +36,10 @@
         </section>
         <!-- Navbar & Hero End -->
 <!-- //////////////////////// -->
+<div class="wow fadeInUp" data-wow-delay="0.1s">
+    <h3 class="section-title text-secondary justify-content-center"><span></span>&nbsp;شكون حنا&nbsp;<span></span></h3>
+    <h1 class="text-center mb-2"> نادي أبطال الديجيتال </h1>
+</div>
 <div class="hh" id="الأنشطة">
     <div class="d-lg-flex align-items-center w-75">
         <div class="parent flex-shrink-0">
@@ -53,10 +57,10 @@
             </div>
         </div>
         <div class="mx-5">
-            <h2 style="color: #fba504;" id="head">distracted</h2>
+            <h2 style="color: #fba504;" id="heade">كيفاش</h2>
             <hr style="color: #6222CC; height: 10px; border-radius: 15px;">   
-            <h4>كيفاش نشأ أبطال الديجتال</h4>
-            <h5>أستاذ المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو .</h5>
+            <h4 id="titlee">>كيفاش نشأ أبطال الديجتال</h4>
+            <h5 id="bodye">أستاذ المعلوميات فكر باش يوري التلامد تاعو مدى أهمية الديجتال و فكر مع واحد المجموعة باش يصاوبو واحد الكلوب لي يقدر يحقق فيه كل الأهداف تاعو .</h5>
         </div>
     </div>
 </div>

@@ -111,11 +111,12 @@
 <div class="d-flex  flex-wrap justify-content-center">
     @foreach ($posts as $post)
     <div class="card mx-3" style="width: 18rem;">
-        <img src="{{Storage::get('public/'. $post->image)}}" class="card-img-top" alt="...">
+        <img src="{{asset('storage/'.$post->image)}}" class="card-img-top" alt="...">
+        
         <div class="card-body">
             <h5 class="card-title">{{$post->title}}</h5>
             <p class="card-text">{{$post->excerpt}}</p>
-            <a href="#" class="btn btn-primary">اضهار المزيد</a>
+            <a href="{{route('blogs.show', $post->id)}}" class="btn btn-primary">اضهار المزيد</a>
         </div>
     </div>
     @endforeach

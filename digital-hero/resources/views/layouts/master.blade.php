@@ -75,5 +75,4 @@
     <script src="{{ URL::asset('js/main.js') }}"></script>
     <script src="{{ URL::asset('js/script.js') }}"></script>
 </body>
-
 </html>

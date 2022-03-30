@@ -9,7 +9,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav mx-auto py-0">
-                <a href="#" class="nav-item nav-link active">الرئيسية</a>
+                <a href="" class="nav-item nav-link active">الرئيسية</a>
                 <a href="{{route('blogs')}}" class="nav-item nav-link">المقالات</a>
                 <div class="nav-item dropdown text-end" dir="ltr">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">شكون حنا</a>

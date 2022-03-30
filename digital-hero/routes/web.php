@@ -31,5 +31,8 @@ Route::get('blogs', [PostController::class , 'index'])->name('blogs');
 
 
 Route::get('/index/contact', function () {
-    return view('hero.contact');
+    return view('pages.contact');
 })->name('contact');
+
+
+Route::get('blog/{id}', [PostController::class, 'show'])->name('blogs.show');
